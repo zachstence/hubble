@@ -1,0 +1,16 @@
+{
+    "items": [
+        {
+            "name": "Proxmox",
+            "link": "https://192.168.1.181:8006/#v1:0:=node%2Fgalaxy:4:::::::"
+        },
+        {
+            "name" : "Portainer",
+            "link": "http://192.168.1.184:9000"
+        },
+        {
+            "name": "Hubble",
+            "link": "http://192.168.1.184:9002"
+        }
+    ]
+}
