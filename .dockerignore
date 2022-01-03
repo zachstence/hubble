@@ -1,4 +1,4 @@
 .git
 node_modules
 public/build
-public/config
+public/config.json
