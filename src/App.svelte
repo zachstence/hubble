@@ -1,14 +1,18 @@
 <script lang="ts">
+	import Item from "./Item.svelte";
 	import {config} from "./store";
 </script>
 
-
 <main>
-	{#await config.init()}
-		Loading...
-	{:then}
-		<pre>{JSON.stringify($config, null, 2)}</pre>
-	{:catch error}
-		<pre>{error}</pre>
-	{/await}
+	{#each $config.items as item}
+		<Item name={item.name} link={item.link} />
+	{/each}
 </main>
+
+
+<style>
+	:global(body) {
+		background-color: black;
+		color: white;
+	}
+</style>

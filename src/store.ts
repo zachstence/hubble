@@ -1,6 +1,8 @@
 import { writable } from "svelte/store";
 import type { Config } from "./types";
 
+export const error = writable<string>();
+
 const createConfigStore = () => {
     const store = writable<Config>();
 
@@ -8,8 +10,12 @@ const createConfigStore = () => {
         ...store,
         init: async () => {
             const res = await fetch("config.json");
-            const json = await res.json();
-            store.set(json);
+            if (res.status === 200) {
+                const json = await res.json();
+                store.set(json);
+            } else {
+                error.set("Missing config file 'config.json'");
+            }
         }
     }
 }
