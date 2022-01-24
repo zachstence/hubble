@@ -1,4 +1,4 @@
-import Init from './Init.svelte';
+import Init from './components/Init.svelte';
 
 const app = new Init({target: document.body});
 

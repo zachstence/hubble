@@ -1,6 +1,6 @@
 <script lang="ts">
-	import App from "./App.svelte";
-    import {config} from "./store";
+	import App from "../App.svelte";
+    import {config} from "../store";
 </script>
 
 {#await config.init()}

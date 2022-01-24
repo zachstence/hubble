@@ -1,11 +1,11 @@
 <script lang="ts">
-	import Item from "./Item.svelte";
+	import Item from "./components/Item.svelte";
 	import {config} from "./store";
 </script>
 
 <main>
 	{#each $config.items as item}
-		<Item name={item.name} link={item.link} />
+		<Item item={item} />
 	{/each}
 </main>
 
