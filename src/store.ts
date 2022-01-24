@@ -15,7 +15,7 @@ const createConfigStore = (): ConfigStore => {
         ...store,
         init: async () => {
             try {
-                const res = await fetch("config.json");
+                const res = await fetch("/config/config.json");
                 if (res.status === 200) {
                     const json = await res.json();
                     store.set(json);

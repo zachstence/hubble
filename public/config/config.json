@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "name": "Proxmox",
+            "link": "https://192.168.1.1:8006"
+        },
+        {
+            "name": "Portainer",
+            "link": "http://192.168.1.2:9000"
+        },
+        {
+            "name": "Uptime Kuma",
+            "link": "http://192.168.1.2:3001"
+        },
+        {
+            "name": "File Browser",
+            "link": "http://192.168.1.2:49154"
+        },
+        {
+            "name": "Govee Web",
+            "link": "http://192.168.1.2:3000"
+        }
+    ]
+}
